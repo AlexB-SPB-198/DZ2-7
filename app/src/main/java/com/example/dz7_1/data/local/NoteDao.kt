@@ -11,14 +11,14 @@ import com.example.dz7_1.data.model.NoteEntity
 interface NoteDao {
 
     @Insert
-    fun createNote(noteEntity: NoteEntity)
+   suspend fun createNote(noteEntity: NoteEntity)
 
     @Query("SELECT * FROM notes")
-    fun getAllNotes(): List<NoteEntity>
+  suspend  fun getAllNotes(): List<NoteEntity>
 
     @Update
-    fun editNotes(noteEntity: NoteEntity)
+   suspend fun editNotes(noteEntity: NoteEntity)
 
     @Delete
-    fun deliteNotes(noteEntity: NoteEntity)
+   suspend fun deleteNotes(noteEntity: NoteEntity)
 }
