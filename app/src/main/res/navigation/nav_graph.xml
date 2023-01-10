@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lookNotesFragment">
+
+    <fragment
+        android:id="@+id/lookNotesFragment"
+        android:name="com.example.dz7_1.presentation.look_notes.LookNotesFragment"
+        android:label="fragment_look_notes"
+        tools:layout="@layout/fragment_look_notes" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/newNotesFragment"
+        android:name="com.example.dz7_1.presentation.new_notes.NewNotesFragment"
+        android:label="fragment_new_notes"
+        tools:layout="@layout/fragment_new_notes" >
+
+    </fragment>
+</navigation>
